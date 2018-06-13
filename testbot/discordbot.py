@@ -11,13 +11,12 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-    # 「おはよう」で始まるか調べる
     if message.content.startswith("おはよう"):
-        # 送り主がBotだった場合反応したくないので
+        # 送り主がBotだった場合反応しない
         if client.user != message.author:
-            # メッセージを書きます
+            # メッセージを書く
             m = "おはようございます" + message.author.name + "さん！"
-            # メッセージが送られてきたチャンネルへメッセージを送ります
+            # メッセージが送られてきたチャンネルへメッセージを送る
             await client.send_message(message.channel, m)
 
 client.run("NDU2NDI0MjE2NjMyMjI5ODk5.DgKWXQ.gXLEuZ5dNi587jZYl709UECzVIQ")
