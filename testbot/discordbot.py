@@ -11,7 +11,7 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-    if message.content.startswith('おはよう'):
+    if message.content.startswith('おはよう','Ohayo','Good Morning'):
         # 送り主がBotだった場合反応しない
         if client.user != message.author:
             # メッセージを書く
