@@ -23,4 +23,4 @@ async def on_message(message):
             m = "こんばんは" + message.author.name + "さん！"
             await client.send_message(message.channel, m)
 
-client.run("NDU2NDI0MjE2NjMyMjI5ODk5.DgKWXQ.gXLEuZ5dNi587jZYl709UECzVIQ")
+client.run("token")
